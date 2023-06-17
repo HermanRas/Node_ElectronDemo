@@ -10,6 +10,12 @@ function createMainWindow() {
         title: "Main Menu",
         width: isDEV ? 1000 : 500,
         height: 800,
+        //shareNode Module with renderer
+        webPreferences: {
+            contextIsolation: true,
+            nodeIntegration: true,
+            preload: path.join(__dirname, 'preload.js')
+        },
     });
 
     //if in dev .env open dev tools
