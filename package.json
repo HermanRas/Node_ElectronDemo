@@ -1,0 +1,16 @@
+{
+  "name": "node_electrondemo",
+  "productName": "Node_ElectronDemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . --electron-version:25.1.1 --out winx64 --overwrite --appname Node_ElectronDemo --icon ./icon.ico"
+  },
+  "author": "Herman Ras",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^25.1.1"
+  }
+}
